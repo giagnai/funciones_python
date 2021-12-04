@@ -12,9 +12,17 @@
 # --------------------------------
 # Aquí dentro definir la función que solicitará
 # el nombre de tres invitados
-# def generar_invitados():
+def generar_invitados():
+    lista = []
 
+    i = 0
+    while (i < 3):
+        print("Ingrese nombre de invitado: ")
+        invitado = str(input())
+        lista.append(invitado)
+        i += 1
 
+    return lista
 # --------------------------------
 
 
@@ -31,7 +39,7 @@ if __name__ == '__main__':
 
     # Los tres nombres ingresados se deberán guardar en
     # una lista
-
+    
     # La función generar_invitados deberá retornar
     # la lista de invitados generados
 
@@ -39,9 +47,10 @@ if __name__ == '__main__':
     # y solicitar los 3 invitiados, uno en cada iteración del bucle
 
     # Luego de crear la función invocarla en este lugar:
-
+    lista_invitados = generar_invitados()
     # lista_invitados = generar_invitados()
 
     # Imprimir en pantalla "lista_invitados":
+    print("Lista de invitados: \n", lista_invitados)
 
     print("terminamos")
